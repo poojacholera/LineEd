@@ -77,11 +77,11 @@ void Command::parse(const string& line){
         compareAddresses();
     }
     if(!isValidDigit(address1)){
-        cout<<"Bad address1:"<<address1<<'\n';
+        cout<<"Bad address 1: "<<address1<<'\n';
         status= false;
         return;
     }else if(!isValidDigit(address2)){
-        cout<<"Bad address2:"<<address2<<'\n';
+        cout<<"Bad address 2: "<<address2<<'\n';
         status= false;
         return;
     }

@@ -15,7 +15,7 @@ using std::endl;
 // function prototypes
 void testLineEd(const string & filename);
 
-int main(int argc, char * argv[])
+int main1(int argc, char * argv[])
 {
     if (argc > 2)  // too many arguments
     {
@@ -31,11 +31,11 @@ int main(int argc, char * argv[])
     };
 
     // Normally, we'd run the editor by uncommenting the following two lines
-    LineEd ed(filename); // create a LineED object
-    ed.run();             // run the line editor
+   /* LineEd ed(filename); // create a LineED object
+    ed.run();             // run the line editor*/
 
     // test our line editor
-    //testLineEd(filename); // normally we'd comment out this line
+    testLineEd(filename); // normally we'd comment out this line
 
     return 0;
 }
